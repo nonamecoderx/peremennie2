@@ -1,13 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-     float a = 27.12f;
-     long b = 987678965549L;
-     byte c = 2;
-     short d = 786;
-     boolean e = false;
-     short f = 569;
-     short g = -159;
-     short h = 27897;
-     byte j = 67;
+     byte luda = 23;
+     byte anna = 27;
+     byte katya = 30;
+     int totalUch = luda + anna + katya;
+     short list = 480;
+     int forOne = list / totalUch;
+     System.out.println("На каждого ученика расчитано " + forOne + " листов бумаги.");
          }
 }
