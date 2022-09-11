@@ -1,17 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 1;
-        byte b = 1;
-        short c = 1;
-        long d = 1;
-        float e = 1.01f;
-        double f = 1.001;
-        System.out.println("Значение переменной a с типом int равно " + a);
-        System.out.println("Значение переменной b с типом byte равно " + b);
-        System.out.println("Значение переменной c с типом short равно " + c);
-        System.out.println("Значение переменной d с типом long равно " + d);
-        System.out.println("Значение переменной e с типом float равно " + e);
-        System.out.println("Значение переменной f с типом double равно " + f);
-        
+     byte bananWeigh = 80;
+     byte milkWeigh = 105;
+     byte iceWeigh = 100;
+     byte eggWeigh = 70;
+     byte bananNumber = 4;
+     byte milkNumber = 2;
+     byte iceNumber = 2;
+     byte eggNumber = 4;
+     int totalBanan = bananWeigh * bananNumber;
+     int totalMilk = milkWeigh * milkNumber;
+     int totalIce = iceWeigh * iceNumber;
+     int totalEgg = eggWeigh * eggNumber;
+     int breakfastWeigh = totalEgg + totalBanan + totalIce + totalMilk;
+     int grPerKg = 1000;
+     float weightKg = breakfastWeigh/(float)grPerKg;
+     System.out.println("Вес завтрака " + weightKg + " кг");
+
     }
 }
