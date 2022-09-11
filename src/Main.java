@@ -1,17 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 1;
-        byte b = 1;
-        short c = 1;
-        long d = 1;
-        float e = 1.01f;
-        double f = 1.001;
-        System.out.println("Значение переменной a с типом int равно " + a);
-        System.out.println("Значение переменной b с типом byte равно " + b);
-        System.out.println("Значение переменной c с типом short равно " + c);
-        System.out.println("Значение переменной d с типом long равно " + d);
-        System.out.println("Значение переменной e с типом float равно " + e);
-        System.out.println("Значение переменной f с типом double равно " + f);
-        
+     byte time = 2;
+     byte total = 16;
+     byte time1 = 20;
+     int proizv1 = total / time * time1;
+     System.out.println("За " + time1 + " минут машина произвела бутылок " + proizv1 + " штук");
+     int time2 = time1 * 3 * 24;
+     int proizv2 = time2 * total;
+     System.out.println("За " + time2 + " минут машина произвела бутылок " + proizv2 + " штук");
+     int time3 = time2 * 3;
+     int proizv3 = time3 * total;
+     System.out.println("За " + time3 + " минут машина произвела бутылок " + proizv3 + " штук");
+     int time4 = time2 * 31;
+     int proizv4 = time4 * total;
+     System.out.println("За " + time4 + " минут машина произвела бутылок " + proizv4 + " штук");
     }
 }
