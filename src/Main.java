@@ -1,12 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-     byte total = 120;
-     byte klassWhite = 2;
-     byte klassBrown = 4;
-     int oneClass = klassBrown + klassWhite;
-     int totalClasses = total / oneClass;
-     int totalClassWhite = totalClasses * klassWhite;
-     int totalClassBrown = totalClasses * klassBrown;
-     System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalClassWhite + " банок белой краски и " + totalClassBrown + " банок коричневой краски");
+     byte bananWeigh = 80;
+     byte milkWeigh = 105;
+     byte iceWeigh = 100;
+     byte eggWeigh = 70;
+     byte bananNumber = 4;
+     byte milkNumber = 2;
+     byte iceNumber = 2;
+     byte eggNumber = 4;
+     int totalBanan = bananWeigh * bananNumber;
+     int totalMilk = milkWeigh * milkNumber;
+     int totalIce = iceWeigh * iceNumber;
+     int totalEgg = eggWeigh * eggNumber;
+     int breakfastWeigh = totalEgg + totalBanan + totalIce + totalMilk;
+     int grPerKg = 1000;
+     float weightKg = breakfastWeigh/(float)grPerKg;
+     System.out.println("Вес завтрака " + weightKg + " кг");
+
     }
 }
