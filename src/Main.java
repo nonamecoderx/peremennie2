@@ -1,17 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 1;
-        byte b = 1;
-        short c = 1;
-        long d = 1;
-        float e = 1.01f;
-        double f = 1.001;
-        System.out.println("Значение переменной a с типом int равно " + a);
-        System.out.println("Значение переменной b с типом byte равно " + b);
-        System.out.println("Значение переменной c с типом short равно " + c);
-        System.out.println("Значение переменной d с типом long равно " + d);
-        System.out.println("Значение переменной e с типом float равно " + e);
-        System.out.println("Значение переменной f с типом double равно " + f);
-        
+     byte total = 120;
+     byte klassWhite = 2;
+     byte klassBrown = 4;
+     int oneClass = klassBrown + klassWhite;
+     int totalClasses = total / oneClass;
+     int totalClassWhite = totalClasses * klassWhite;
+     int totalClassBrown = totalClasses * klassBrown;
+     System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalClassWhite + " банок белой краски и " + totalClassBrown + " банок коричневой краски");
     }
 }
