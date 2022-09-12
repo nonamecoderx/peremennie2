@@ -1,21 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-     byte bananWeigh = 80;
-     byte milkWeigh = 105;
-     byte iceWeigh = 100;
-     byte eggWeigh = 70;
-     byte bananNumber = 4;
-     byte milkNumber = 2;
-     byte iceNumber = 2;
-     byte eggNumber = 4;
-     int totalBanan = bananWeigh * bananNumber;
-     int totalMilk = milkWeigh * milkNumber;
-     int totalIce = iceWeigh * iceNumber;
-     int totalEgg = eggWeigh * eggNumber;
-     int breakfastWeigh = totalEgg + totalBanan + totalIce + totalMilk;
-     int grPerKg = 1000;
-     float weightKg = breakfastWeigh/(float)grPerKg;
-     System.out.println("Вес завтрака " + weightKg + " кг");
-
+    byte vesKg = 7;
+    int vesGr = vesKg * 1000;
+    short weightOne = 250;
+    short weihgtTwo = 500;
+    int dayOne = vesGr / weightOne; //похудение при потере 250гр в день
+    int dayTwo = vesGr / weihgtTwo; //похудение при потере 500гр в день
+    int daySred = (dayTwo + dayOne) / 2; //похудение при потере 375гр в день
+    System.out.println("Если в день терять " + weightOne + " гр, то на похудение уйдет " + dayOne + " дней");
+    System.out.println("Если в день терять " + weihgtTwo + " гр, то на похудение уйдет " + dayTwo + " дней");
+    System.out.println("В среднем на похудение уйдет " + daySred + " дней");
     }
 }
