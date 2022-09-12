@@ -1,17 +1,22 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 1;
-        byte b = 1;
-        short c = 1;
-        long d = 1;
-        float e = 1.01f;
-        double f = 1.001;
-        System.out.println("Значение переменной a с типом int равно " + a);
-        System.out.println("Значение переменной b с типом byte равно " + b);
-        System.out.println("Значение переменной c с типом short равно " + c);
-        System.out.println("Значение переменной d с типом long равно " + d);
-        System.out.println("Значение переменной e с типом float равно " + e);
-        System.out.println("Значение переменной f с типом double равно " + f);
-        
+    int mashaOld = 67760;
+    int denOld = 83690;
+    int krisOld = 76230;
+    int mashaOldYear = mashaOld * 12;       //зп за год Маши до повышения
+    int denOldYear = denOld * 12;           //зп за год Дениса до повышения
+    int krisOldYear = krisOld * 12;         //зп за год Кристины до повышения
+    double mashaNew = mashaOld * 1.1;       //зп в месяц после повышения
+    double denNew = denOld * 1.1;           //зп в месяц после повышения
+    double krisNew = krisOld * 1.1;         //зп в месяц после повышения
+    double mashaNewYear = mashaNew * 12;    //зп за год после повышения
+    double denNewYear = denNew * 12;        //зп за год после повышения
+    double krisNewYear = krisNew * 12;      //зп за год после повышения
+    double raznMasha = mashaNewYear - mashaOldYear;
+    double raznDen = (denNewYear - denOldYear);
+    double raznKris = krisNewYear - krisOldYear;
+    System.out.println("Маша теперь получает " + mashaNew + " рублей. Годовой доход вырос на " + raznMasha + " рублей.");
+    System.out.println("Денис теперь получает " +  denNew + " рублей. Годовой доход вырос на " +  raznDen + " рублей.");
+    System.out.println("Кристина теперь получает " + krisNew + " рублей. Годовой доход вырос на " + raznKris + " рублей.");
     }
 }
